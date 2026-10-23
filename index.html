@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="EProgram — learn HTML, CSS, and JavaScript by playing and building projects.">
+  <title>EProgram — Learn, Code, and Play</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="EProgram home">
+        <span class="brand-mark">&lt;/&gt;</span><span>EProgram<span class="brand-dot">.</span></span>
+      </a>
+      <div class="sidebar-label">LEARNING SPACE</div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <a href="#home" data-page="home" class="nav-link active"><span>⌂</span> Home</a>
+        <a href="#learn" data-page="learn" class="nav-link"><span>▤</span> Learn</a>
+        <a href="#playground" data-page="playground" class="nav-link"><span>⌘</span> Playground</a>
+        <a href="#games" data-page="games" class="nav-link"><span>♟</span> Games</a>
+        <a href="#quizzes" data-page="quizzes" class="nav-link"><span>☑</span> Quizzes</a>
+        <a href="#projects" data-page="projects" class="nav-link"><span>◈</span> Projects</a>
+        <a href="#progress" data-page="progress" class="nav-link"><span>↗</span> Progress</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="mini-streak"><span class="streak-icon">✦</span><div><strong id="sidebar-points">0 XP earned</strong><small>Every line counts.</small></div></div>
+        <div class="profile-mini"><div class="avatar">EP</div><div><strong>Code Explorer</strong><small>Beginner level</small></div></div>
+      </div>
+    </aside>
+
+    <div class="main-column">
+      <header class="topbar">
+        <button class="mobile-menu" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <div class="breadcrumb"><span>Learning space</span><b>/</b><strong id="page-name">Home</strong></div>
+        <div class="topbar-right"><span class="status-dot"></span><span class="online-label">Your workspace</span><div class="avatar small">EP</div></div>
+      </header>
+      <main id="main" tabindex="-1">
+        <section class="page active" id="page-home" aria-labelledby="welcome-title">
+          <div class="hero">
+            <div class="hero-copy">
+              <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR CREATIVE CODING JOURNEY</div>
+              <h1 id="welcome-title">Learn to code.<br><span class="gradient-text">Build your ideas.</span><br>Play while you learn.</h1>
+              <p>Turn curiosity into code. Explore bite-sized lessons, experiment in a live playground, and level up through fun challenges.</p>
+              <div class="hero-actions"><a class="btn btn-primary" href="#learn">Start learning <span>→</span></a><a class="btn btn-ghost" href="#playground"><span class="play-icon">▶</span> Try coding</a></div>
+              <div class="hero-proof"><div class="proof-avatars"><span>H</span><span>C</span><span>JS</span></div><span>Three core skills. Endless things to build.</span></div>
+            </div>
+            <div class="hero-art" aria-label="Decorative code illustration">
+              <div class="orb orb-one"></div><div class="orb orb-two"></div>
+              <div class="code-window">
+                <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>your-first-page.html</span><span class="window-status">●</span></div>
+                <div class="code-lines"><div><em>01</em><span class="code-purple">&lt;html&gt;</span></div><div><em>02</em><span class="code-purple indent">&lt;body&gt;</span></div><div><em>03</em><span class="code-blue indent2">&lt;h1&gt;</span><span class="code-green">Hello, world!</span><span class="code-blue">&lt;/h1&gt;</span></div><div><em>04</em><span class="code-purple indent">&lt;/body&gt;</span></div><div><em>05</em><span class="code-purple">&lt;/html&gt;</span></div></div>
+                <div class="code-result"><span class="result-check">✓</span><div><strong>It works!</strong><small>Your first webpage is ready.</small></div><span class="result-spark">✧</span></div>
+              </div>
+              <div class="floating-chip chip-html"><b>5</b><span>HTML</span></div><div class="floating-chip chip-css"><b>✳</b><span>CSS</span></div><div class="floating-chip chip-js"><b>JS</b><span>JavaScript</span></div>
+            </div>
+          </div>
+
+          <div class="section-heading"><div><div class="eyebrow">YOUR NEXT STEP</div><h2>Choose your learning path</h2><p>Start with the building blocks, then make them your own.</p></div><a class="text-link" href="#learn">View all lessons <span>→</span></a></div>
+          <div class="path-grid">
+            <article class="path-card html-card"><div class="path-top"><span class="path-icon">&lt;/&gt;</span><span class="level-pill">01 · STRUCTURE</span></div><h3>HTML Foundations</h3><p>Give your website its structure with headings, paragraphs, links, and more.</p><div class="path-bottom"><div class="progress-track"><span id="html-progress-bar" style="width:0%"></span></div><small id="html-progress-text">0% complete</small></div><a class="card-action" href="#learn" data-open-module="html">Explore HTML <span>↗</span></a></article>
+            <article class="path-card css-card"><div class="path-top"><span class="path-icon">✳</span><span class="level-pill">02 · DESIGN</span></div><h3>CSS Styling</h3><p>Bring your pages to life with colors, spacing, layouts, and animation.</p><div class="path-bottom"><div class="progress-track"><span id="css-progress-bar" style="width:0%"></span></div><small id="css-progress-text">0% complete</small></div><a class="card-action" href="#learn" data-open-module="css">Explore CSS <span>↗</span></a></article>
+            <article class="path-card js-card"><div class="path-top"><span class="path-icon">JS</span><span class="level-pill">03 · INTERACTION</span></div><h3>JavaScript Essentials</h3><p>Make websites interactive with variables, functions, events, and logic.</p><div class="path-bottom"><div class="progress-track"><span id="js-progress-bar" style="width:0%"></span></div><small id="js-progress-text">0% complete</small></div><a class="card-action" href="#learn" data-open-module="js">Explore JavaScript <span>↗</span></a></article>
+          </div>
+
+          <div class="dashboard-grid">
+            <section class="panel continue-panel"><div class="panel-heading"><div><span class="eyebrow">PICK UP WHERE YOU LEFT OFF</span><h2>Keep your momentum</h2></div><span class="panel-icon">↗</span></div><div class="continue-content"><div class="continue-graphic">⌘</div><div class="continue-copy"><span class="tiny-tag">INTERACTIVE PRACTICE</span><h3>Your coding playground</h3><p>Write code, run it, and watch your creation appear instantly.</p><a class="btn btn-primary btn-sm" href="#playground">Open playground →</a></div></div></section>
+            <section class="panel stats-panel"><div class="panel-heading"><div><span class="eyebrow">YOUR ACTIVITY</span><h2>Progress snapshot</h2></div><span class="panel-icon">◷</span></div><div class="stat-list"><div class="stat-row"><span class="stat-symbol purple">▤</span><div><strong id="home-lessons">0</strong><small>Lessons completed</small></div><span class="stat-note">Lessons</span></div><div class="stat-row"><span class="stat-symbol cyan">★</span><div><strong id="home-points">0</strong><small>Points collected</small></div><span class="stat-note">XP</span></div><div class="stat-row"><span class="stat-symbol orange">✓</span><div><strong id="home-challenges">0</strong><small>Challenges completed</small></div><span class="stat-note">Wins</span></div></div></section>
+          </div>
+          <div class="section-heading compact-heading"><div><div class="eyebrow">PLAY. PRACTICE. PROGRESS.</div><h2>Featured challenges</h2></div><a class="text-link" href="#games">All games <span>→</span></a></div>
+          <div class="feature-grid"><a class="feature-card" href="#games" data-game="guess"><span class="feature-icon purple-bg">?</span><div><h3>Guess the Code</h3><p>Can you spot the right answer?</p><small>5 quick questions · + points</small></div><span class="feature-arrow">↗</span></a><a class="feature-card" href="#games" data-game="bug"><span class="feature-icon cyan-bg">⌁</span><div><h3>Fix the Bug</h3><p>Find mistakes and save the code.</p><small>Debugging · + points</small></div><span class="feature-arrow">↗</span></a><a class="feature-card" href="#projects"><span class="feature-icon orange-bg">▣</span><div><h3>Build a Mini Website</h3><p>Put your new skills to work.</p><small>Creative project · + points</small></div><span class="feature-arrow">↗</span></a></div>
+        </section>
+
+        <section class="page" id="page-learn" aria-labelledby="learn-title"><div class="page-intro"><div class="eyebrow">LEARN THE FUNDAMENTALS</div><h1 id="learn-title">Small lessons. <span class="gradient-text">Big skills.</span></h1><p>Choose a module, explore the examples, then mark each lesson complete as you go.</p></div><div class="learn-layout"><aside class="module-picker panel"><h3>Learning modules</h3><button class="module-tab selected" data-module="html"><span class="module-mini html-mini">&lt;/&gt;</span><span><strong>HTML</strong><small>Structure and content</small></span><span class="tab-arrow">›</span></button><button class="module-tab" data-module="css"><span class="module-mini css-mini">✳</span><span><strong>CSS</strong><small>Style and layout</small></span><span class="tab-arrow">›</span></button><button class="module-tab" data-module="js"><span class="module-mini js-mini">JS</span><span><strong>JavaScript</strong><small>Logic and behavior</small></span><span class="tab-arrow">›</span></button><div class="module-tip"><span>✦</span><div><strong>Learning tip</strong><p>Try the code examples yourself. Making mistakes is part of learning!</p></div></div></aside><div class="lesson-area" id="lesson-content"></div></div></section>
+
+        <section class="page" id="page-playground" aria-labelledby="playground-title"><div class="page-intro playground-intro"><div><div class="eyebrow">YOUR CREATIVE WORKSPACE</div><h1 id="playground-title">Code it. <span class="gradient-text">Run it.</span> See it.</h1><p>Experiment with HTML, CSS, and JavaScript together. Your code runs in an isolated preview.</p></div><div class="editor-actions"><button class="btn btn-ghost btn-sm" id="reset-code">↺ Reset code</button><button class="btn btn-primary btn-sm" id="run-code">▶ Run code</button></div></div><div class="playground-workspace"><div class="editors-column"><div class="editor-panel"><div class="editor-header"><span class="editor-language html-dot"></span><strong>HTML</strong><span class="editor-file">index.html</span><button class="editor-copy" data-copy="html" aria-label="Copy HTML code">▢</button></div><textarea id="html-editor" spellcheck="false" aria-label="HTML code editor"></textarea></div><div class="editor-panel"><div class="editor-header"><span class="editor-language css-dot"></span><strong>CSS</strong><span class="editor-file">style.css</span><button class="editor-copy" data-copy="css" aria-label="Copy CSS code">▢</button></div><textarea id="css-editor" spellcheck="false" aria-label="CSS code editor"></textarea></div><div class="editor-panel"><div class="editor-header"><span class="editor-language js-dot"></span><strong>JavaScript</strong><span class="editor-file">script.js</span><button class="editor-copy" data-copy="js" aria-label="Copy JavaScript code">▢</button></div><textarea id="js-editor" spellcheck="false" aria-label="JavaScript code editor"></textarea></div></div><div class="preview-column"><div class="preview-panel"><div class="preview-header"><div><span class="live-dot"></span><strong>Live preview</strong></div><span class="preview-label">SANDBOX</span></div><iframe id="code-preview" title="Your code preview" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe></div><div class="console-panel"><div class="console-header"><strong><span>›_</span> Console & output</strong><button id="clear-console" class="subtle-button">Clear</button></div><div id="console-output" class="console-output" role="log" aria-live="polite"><div class="console-muted">Run your code to see console messages and errors here.</div></div></div><div class="safety-note"><span>♧</span><span>Your preview is sandboxed. Avoid entering private information into code examples.</span></div></div></div></section>
+
+        <section class="page" id="page-games" aria-labelledby="games-title"><div class="page-intro"><div class="eyebrow">LEARN BY PLAYING</div><h1 id="games-title">Level up your <span class="gradient-text">code skills.</span></h1><p>Practice, collect points, and get friendly feedback every step of the way.</p></div><div class="game-tabs" role="tablist" aria-label="Coding games"><button class="game-tab active" data-game="guess">01 Guess the Code</button><button class="game-tab" data-game="bug">02 Fix the Bug</button><button class="game-tab" data-game="builder">03 Code Builder</button><button class="game-tab" data-game="js">04 JavaScript Challenge</button><button class="game-tab" data-game="mini">05 Mini Website</button></div><div id="game-content" class="game-content"></div></section>
+
+        <section class="page" id="page-quizzes" aria-labelledby="quizzes-title"><div class="page-intro"><div class="eyebrow">CHECK WHAT YOU KNOW</div><h1>Quick quizzes. <span class="gradient-text">Real progress.</span></h1><p>Choose a topic and difficulty. Each quiz has five questions and instant feedback.</p></div><div class="quiz-controls panel"><div class="field-group"><label for="quiz-topic">Learning module</label><select id="quiz-topic"><option value="html">HTML Foundations</option><option value="css">CSS Styling</option><option value="js">JavaScript Essentials</option></select></div><div class="field-group"><label for="quiz-level">Difficulty</label><select id="quiz-level"><option value="beginner">Beginner</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select></div><button class="btn btn-primary" id="start-quiz">Start quiz →</button></div><div id="quiz-content" class="quiz-content"><div class="empty-state"><div class="empty-icon">☑</div><h3>Ready to test your knowledge?</h3><p>Select a module and press Start quiz when you're ready.</p></div></div></section>
+
+        <section class="page" id="page-projects" aria-labelledby="projects-title"><div class="page-intro"><div class="eyebrow">MAKE SOMETHING REAL</div><h1>Projects that bring <span class="gradient-text">ideas to life.</span></h1><p>Follow a guide, explore the starter code, and customize each project in the playground.</p></div><div class="project-grid" id="project-grid"></div></section>
+
+        <section class="page" id="page-progress" aria-labelledby="progress-title"><div class="page-intro"><div class="eyebrow">YOUR JOURNEY SO FAR</div><h1>Look how far <span class="gradient-text">you've come.</span></h1><p>Your progress is saved in this browser, so you can return whenever you're ready.</p></div><div class="progress-overview"><div class="progress-score panel"><div class="score-orbit"><div><strong id="progress-xp">0</strong><small>XP TOTAL</small></div></div><h2 id="progress-level">Code Explorer</h2><p id="progress-next">Complete a lesson or challenge to earn points.</p></div><div class="progress-metrics"><div class="metric-card panel"><span class="metric-icon purple">▤</span><strong id="progress-lessons">0</strong><small>Lessons completed</small></div><div class="metric-card panel"><span class="metric-icon cyan">☑</span><strong id="progress-quizzes">0</strong><small>Quizzes completed</small></div><div class="metric-card panel"><span class="metric-icon orange">⌘</span><strong id="progress-challenges">0</strong><small>Challenges completed</small></div></div></div><div class="panel achievement-panel"><div class="panel-heading"><div><div class="eyebrow">MILESTONES</div><h2>Achievements & badges</h2></div><span class="panel-icon">✦</span></div><div class="achievement-grid" id="achievement-grid"></div></div><div class="panel history-panel"><div class="panel-heading"><div><div class="eyebrow">YOUR LEARNING PATH</div><h2>Module progress</h2></div></div><div id="module-progress-list"></div><div class="progress-footer"><button class="btn btn-ghost btn-sm" id="reset-progress">Reset all progress</button><span>Progress is stored locally on this device.</span></div></div></section>
+      </main>
+      <footer class="footer"><span><span class="brand-mark footer-mark">&lt;/&gt;</span> EProgram</span><span>Learn to code. Build your ideas. Play while you learn.</span><a href="#home">Back to top ↑</a></footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
